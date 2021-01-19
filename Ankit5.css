@@ -3,7 +3,7 @@
 }
 body{
      
-				background-color:peru;
+				background-color: peru;
 				font-family: 'Lato',sans-serif;
 				margin:0;
 	}
@@ -44,18 +44,12 @@ body{
 			
 
 	header{
-					background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTomO4gyXQIY1CuHtZW0j7LqLQsbYbiCVXBPw&usqp=CAU');
+					background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpfl29nFqQcAPwqMCoCDeRye4sd4nZH2733g&usqp=CAU');
 					background-size:cover;
-					color:black;
-					display:flex;
 					background-position: center center;
-					align-items:center;
-					justify-content:center;
-					flex-direction: column;
 					height:100vh;
-					
 					position: relative;
-					width:700px;
+					width:800px;
 					height:400px;
 					
 	}
@@ -137,10 +131,8 @@ body{
 					font-size:30px;
 					margin: 0 10px;
 	}
-	@media  (min-width:440px){
+	@media (max-width:440px){
 					section{
 									padding:20px;
-									
 					}
 	}
-	
