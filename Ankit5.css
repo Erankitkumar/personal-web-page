@@ -1,0 +1,146 @@
+*{
+				box-sizing:border-box;
+}
+body{
+     
+				background-color:peru;
+				font-family: 'Lato',sans-serif;
+				margin:0;
+	}
+	nav{
+					background-color:#A64253;
+					color:#fff;
+					display:flex;
+					justify-content: flex-end;
+					padding:17px;
+					position:fixed;
+					top:0;
+					left:0;
+					right:0;
+					z-index:100;
+	}
+	nav a{
+					color:#fff;
+					position: relative;
+					margin-left:30px;
+					text-decoration:none;
+	}
+	nav a::after{
+					content:"";
+					border-bottom: 3px  soild #fff;
+					position:absolute;
+					top:0px;
+					left:0px;
+					transform: translateY(10px);
+					transform:0.3s ease;
+					opacity:0;
+					width:100%;
+					height:100%;
+			}
+	nav a:hover::after{
+					opacity:1;
+					transform: translateY(0);
+	}
+			
+
+	header{
+					background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTomO4gyXQIY1CuHtZW0j7LqLQsbYbiCVXBPw&usqp=CAU');
+					background-size:cover;
+					color:black;
+					display:flex;
+					background-position: center center;
+					align-items:center;
+					justify-content:center;
+					flex-direction: column;
+					height:100vh;
+					
+					position: relative;
+					width:700px;
+					height:400px;
+					
+	}
+	header:: after{
+					content:"30";
+					background-color:#5558ff;
+					position:absolute;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					opacity:12;
+			}
+ header * {
+					position: relative;
+					z-index:1;
+	}
+	header h1{
+					font-size:60px;
+					margin-bottom:5px;
+	}
+	header p{
+					font-size:30px;
+					margin:0px;
+	}
+	section{
+					padding:20px;
+					text-align:center;
+	}
+	section h2 {
+					margin-bottom:0;
+	}
+	section p {
+					margin-top:0;
+	}
+	.project-container{
+					display:flex;
+					flex-wrap:wrap;
+					align-items:center;
+					justify-content:center;
+					max-width:810px;
+					margin:20px auto 0;
+	}
+	. project-tile{
+					margin:10px;
+					max-width:250px;
+					text-decoration:none;
+					transition: transform 0.3s ease;
+	}
+	. project-tile:hover{
+					transform: scale(1.05);
+	}
+	.project-tile img{
+					max-width:100%;
+	}
+	. project-tile p{
+					font-size:20px;
+					margin-top:10px;
+	}
+	.bg-green{
+					background-color:#64253;
+					color:#fff;
+	}
+	.social-ul{
+					display:flex;
+					justify-content:center;
+					flex-wrap:wrap;
+					list-style-type:none;
+					padding:0;
+					margin:0;
+	}
+	.social-ul a{
+	       border-radius:50%;
+	       border:3px soild #fff;
+					color:#fff;
+					display:inline-flex;
+					align-items: center;
+					justify-content:center;
+					font-size:30px;
+					margin: 0 10px;
+	}
+	@media  (min-width:440px){
+					section{
+									padding:20px;
+									
+					}
+	}
+	
